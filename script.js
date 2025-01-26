@@ -1,13 +1,30 @@
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
+const navLinks = document.querySelector('.nav-links');
+const closeIcon = document.querySelector('.close-icon');
 
-// Toggle navigation menu on click
+// Toggle the active class on click
 hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    hamburger.classList.toggle('open');
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  closeIcon.classList.toggle('active');
 });
 
-// Add animation for the hamburger icon
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
+// Close the menu when clicking outside or on the close icon
+document.addEventListener('click', (event) => {
+  if (
+    !event.target.closest('.nav-links') &&
+    !event.target.closest('.hamburger') &&
+    !event.target.closest('.close-icon') &&
+    navLinks.classList.contains('active')
+  ) {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+    closeIcon.classList.remove('active');
+  }
+
+  if (event.target.closest('.close-icon')) {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+    closeIcon.classList.remove('active');
+  }
 });
