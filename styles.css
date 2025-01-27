@@ -1086,9 +1086,10 @@ body {
   }
 
   .nav ul li a {
-    font-size: 24px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 30px;
+    font-weight: bold;
   }
 
   .nav ul li a:hover {
@@ -1531,4 +1532,102 @@ body {
     font-size: 16px;
     color: #666;
   }
+
+  .contact-section {
+    padding: 20px 15px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .contact-info {
+    background-color: #2e4493;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 12px;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-bottom: 0
+  }
+  
+  .contact-header {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-subtext {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+
+  .contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .contact-details li i {
+    margin-right: 15px;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 70%;
+    padding: 10px 15px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 90%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #2e4493;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
 }
